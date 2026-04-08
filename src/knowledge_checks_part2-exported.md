@@ -52,6 +52,7 @@ pandoc -s generated_exams/midterm2_reference_notes.md \
 * `next(&mut self) -> Option<Self::Item>`  Get the next element of an iterator (`None` if there isn't one)
 * `collect<B>(self) -> B` -> Transforms the iterator into a collection of type `B`
 * `take(n: usize) -> Take<Self>` -> Take first N elements of an iterator and _turn them into an iterator_
+* `skip(n: usize) -> Skip<Self>` -> Skip first N elements of an iterator and _turn them into an iterator_
 * `cycle() -> Cycle<Self>` -> Turn a finite iterator into an infinite one that repeats itself
 * `for_each(|x| ...) -> ()` -> Apply a closure to each element in the iterator
 * `filter(|x| ...) -> Filter<Self, P>` -> _Create new iterator_ from old one for elements where closure is true
