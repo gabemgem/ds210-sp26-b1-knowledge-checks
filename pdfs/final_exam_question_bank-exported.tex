@@ -1,0 +1,1341 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  11pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\section{Final Exam Question Bank}\label{final-exam-question-bank}
+
+This file contains the question bank for the final exam.
+
+There are 5 types of questions, which are worth the following points:
+
+\begin{itemize}
+\tightlist
+\item
+  select all that are true = 2 points
+\item
+  short answer = 2 points
+\item
+  predict the output = 3 points
+\item
+  short coding challenge = 4 points
+\item
+  long coding challenge = 8 points
+\end{itemize}
+
+The final exam will be organized into five parts:
+
+\begin{itemize}
+\tightlist
+\item
+  Part 1: 8 points, 4 questions, 2 points each -- select all that are
+  true
+\item
+  Part 2: 8 points, 4 questions, 2 points each -- short answer questions
+\item
+  Part 3: 12 points, 4 questions, 3 points each -- predict the output
+  and explain why
+\item
+  Part 4: 8 points, 2 questions, 4 points each -- short coding
+  challenges
+\item
+  Part 5: 16 points, 2 questions, 8 points each -- longer coding
+  challenges
+\end{itemize}
+
+The final exam will be worth 52 points and the questions will be sampled
+from this question bank.
+
+You'll have 2 hours (120 minutes) to complete the exam.
+
+The exam is closed notes, no electronic devices, but you will be given
+the following \url{final_exam_reference_material.md} at the exam.
+
+\subsection{Select All That Are True
+(mcq\_multi)}\label{select-all-that-are-true-mcq_multi}
+
+Select all statements that are true about ownership and moves in Rust:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. Assigning a \texttt{String} to another variable moves ownership;
+  the original variable is no longer valid.
+\item[$\square$]
+  B. Passing a \texttt{\&String} (a shared reference) to a function
+  moves ownership of the \texttt{String} into the function.
+\item[$\square$]
+  C. Assigning an \texttt{i32} to another variable moves ownership; the
+  original variable is no longer valid.
+\item[$\square$]
+  D. A value is dropped when its owner goes out of scope.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about borrowing rules at a single
+point in a program:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. You can have any number of immutable references (\texttt{\&T})
+  simultaneously.
+\item[$\square$]
+  B. You can have one mutable reference (\texttt{\&mut\ T}) and one
+  immutable reference simultaneously.
+\item[$\square$]
+  C. You can have at most one mutable reference at a time.
+\item[$\square$]
+  D. A mutable reference \texttt{\&mut\ T} gives you read-only access to
+  the value it points at.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about traits in Rust:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. A trait defines a set of method signatures (and optionally default
+  implementations) that types can implement.
+\item[$\square$]
+  B. You can implement a trait you did not define on a type you did not
+  define.
+\item[$\square$]
+  C. A single type can implement multiple traits.
+\item[$\square$]
+  D. A trait method can have a default implementation that implementors
+  may override.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about \texttt{\#{[}derive(...){]}}
+in Rust:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. \texttt{\#{[}derive(Debug){]}} lets you print a value with
+  \texttt{\{:?\}}.
+\item[$\square$]
+  B. To derive \texttt{Copy}, the type must also derive (or implement)
+  \texttt{Clone}.
+\item[$\square$]
+  C. You can derive \texttt{Copy} on a struct that has a \texttt{String}
+  field.
+\item[$\square$]
+  D. To use a struct as a \texttt{HashMap} key, the struct typically
+  needs to derive \texttt{Eq} and \texttt{Hash}.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about lifetimes in Rust:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. Lifetimes describe how long references are valid and are checked at
+  compile time.
+\item[$\square$]
+  B. Lifetime annotations change how long a value lives at runtime.
+\item[$\square$]
+  C. A function signature like
+  \texttt{fn\ longest\textless{}\textquotesingle{}a\textgreater{}(x:\ \&\textquotesingle{}a\ str,\ y:\ \&\textquotesingle{}a\ str)\ -\textgreater{}\ \&\textquotesingle{}a\ str}
+  says the returned reference is valid for at least as long as both
+  inputs.
+\item[$\square$]
+  D. Every function that takes a reference parameter must include an
+  explicit lifetime annotation written out by the programmer.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about generics in Rust:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A.
+  \texttt{fn\ largest\textless{}T:\ PartialOrd\textgreater{}(list:\ \&{[}T{]})\ -\textgreater{}\ \&T}
+  works for any type \texttt{T} that can be ordered.
+\item[$\square$]
+  B. Generics are resolved at runtime through dynamic dispatch by
+  default.
+\item[$\square$]
+  C. A trait bound like \texttt{T:\ Clone\ +\ Debug} means that
+  \texttt{T} must implement at least one of \texttt{Clone} or
+  \texttt{Debug}.
+\item[$\square$]
+  D. Generic functions always rely on runtime type information (RTTI) to
+  decide which type-specific code to execute.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about iterators in Rust:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. Calling \texttt{.map(...)} on an iterator does the work
+  immediately.
+\item[$\square$]
+  B. Iterator adaptors like \texttt{filter}, \texttt{map}, and
+  \texttt{take} are lazy --- no work happens until a consuming method
+  runs.
+\item[$\square$]
+  C. \texttt{.collect()} is a consuming method that drives the iterator
+  to completion.
+\item[$\square$]
+  D. \texttt{.sum()} is a consuming method that returns the total of all
+  elements.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about closures in Rust:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. A closure can capture variables from its enclosing scope by
+  reference, by mutable reference, or by move.
+\item[$\square$]
+  B. The \texttt{move} keyword forces the closure to take ownership of
+  captured variables.
+\item[$\square$]
+  C. A closure and a regular \texttt{fn} function have exactly the same
+  type in Rust.
+\item[$\square$]
+  D. Closures are commonly passed to iterator methods such as
+  \texttt{map}, \texttt{filter}, and \texttt{fold}.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about
+\texttt{Option\textless{}T\textgreater{}} and
+\texttt{Result\textless{}T,\ E\textgreater{}}:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. \texttt{Option\textless{}T\textgreater{}} represents a value that
+  may or may not be present.
+\item[$\square$]
+  B. \texttt{Result\textless{}T,\ E\textgreater{}} represents either a
+  success value of type \texttt{T} or an error of type \texttt{E}.
+\item[$\square$]
+  C. Calling \texttt{.unwrap()} on \texttt{None} returns the default
+  value of type \texttt{T} rather than panicking.
+\item[$\square$]
+  D. \texttt{match} cannot be used to destructure \texttt{Option} or
+  \texttt{Result} values.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about
+\texttt{HashMap\textless{}K,\ V\textgreater{}}:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. Keys must implement \texttt{Eq} and \texttt{Hash}.
+\item[$\square$]
+  B. Iteration order is guaranteed to match insertion order.
+\item[$\square$]
+  C. Average \texttt{insert}, \texttt{get}, and \texttt{remove} are
+  O(1).
+\item[$\square$]
+  D. Calling \texttt{insert} on an existing key replaces the old value
+  and returns \texttt{Some(old\_value)}.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about
+\texttt{BTreeMap\textless{}K,\ V\textgreater{}}:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. Keys must implement \texttt{Ord}.
+\item[$\square$]
+  B. Iteration visits entries in insertion order.
+\item[$\square$]
+  C. \texttt{insert}, \texttt{get}, and \texttt{remove} are O(1)
+  average-case, just like \texttt{HashMap}.
+\item[$\square$]
+  D. \texttt{first\_key\_value()} returns the entry that was inserted
+  first in time.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about
+\texttt{HashSet\textless{}T\textgreater{}}:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. A \texttt{HashSet} stores unique values --- inserting an existing
+  value has no effect on set membership.
+\item[$\square$]
+  B. \texttt{insert} returns \texttt{true} if the value was newly
+  inserted and \texttt{false} if it was already present.
+\item[$\square$]
+  C. \texttt{HashSet} iteration is guaranteed to visit elements in the
+  order they were inserted.
+\item[$\square$]
+  D. \texttt{HashSet} keeps its elements in sorted order.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about
+\texttt{BinaryHeap\textless{}T\textgreater{}} in Rust:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. By default, \texttt{BinaryHeap\textless{}T\textgreater{}} is a
+  max-heap: \texttt{pop()} returns the largest element.
+\item[$\square$]
+  B. Elements only need to implement \texttt{PartialOrd}, so a
+  \texttt{BinaryHeap\textless{}f64\textgreater{}} compiles and works
+  as-is.
+\item[$\square$]
+  C. Iterating with \texttt{.iter()} returns elements in sorted order.
+\item[$\square$]
+  D. \texttt{BinaryHeap::peek()} removes and returns the largest
+  element.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about stacks and queues in Rust:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. A \texttt{Vec\textless{}T\textgreater{}} can be used as a stack via
+  \texttt{push} / \texttt{pop}, with both operations running in
+  amortized O(1).
+\item[$\square$]
+  B. Stacks are LIFO (last-in, first-out) and queues are FIFO (first-in,
+  first-out).
+\item[$\square$]
+  C. \texttt{VecDeque\textless{}T\textgreater{}} supports efficient
+  \texttt{push\_back} and \texttt{pop\_front}, making it a natural FIFO
+  queue.
+\item[$\square$]
+  D. \texttt{Vec::remove(0)} is an O(1) operation.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about the (average-case) complexity
+of common operations:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. Inserting at the front of a \texttt{Vec\textless{}T\textgreater{}}
+  with \texttt{vec.insert(0,\ x)} is O(1).
+\item[$\square$]
+  B. \texttt{HashMap::get} is O(1) on average.
+\item[$\square$]
+  C. \texttt{BTreeMap::get} is O(1) on average, just like
+  \texttt{HashMap::get}.
+\item[$\square$]
+  D. Looking up an element by value in an unsorted
+  \texttt{Vec\textless{}T\textgreater{}} with \texttt{.contains(\&x)} is
+  O(log n).
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Select all statements that are true about the \texttt{Entry} API on
+\texttt{HashMap} and \texttt{BTreeMap}:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A. \texttt{map.entry(key).or\_insert(default)} inserts
+  \texttt{default} only if the key is absent, and returns a mutable
+  reference to the value.
+\item[$\square$]
+  B. \texttt{map.entry(key).or\_insert(default)} always overwrites the
+  existing value when the key is already present.
+\item[$\square$]
+  C. The \texttt{Entry} API is available only on \texttt{HashMap};
+  \texttt{BTreeMap} does not provide an \texttt{entry} method.
+\item[$\square$]
+  D. Internally, \texttt{map.entry(key).or\_insert(v)} performs two
+  separate lookups (one to check for the key, one to insert), so it is
+  slower than a manual \texttt{get} + \texttt{insert}.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Short Answer
+(short\_answer)}\label{short-answer-short_answer}
+
+\textbf{Why does Rust have an ownership system? Name one problem it
+prevents at compile time that languages like C or Python handle
+differently.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is a trait in Rust? Give one concrete example of a
+standard-library trait and describe what it lets you do.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What does a lifetime annotation like
+\texttt{\textquotesingle{}a} in
+\texttt{fn\ longest\textless{}\textquotesingle{}a\textgreater{}(x:\ \&\textquotesingle{}a\ str,\ y:\ \&\textquotesingle{}a\ str)\ -\textgreater{}\ \&\textquotesingle{}a\ str}
+tell the Rust compiler?}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Why are generics useful in Rust? Give one example.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What does it mean that iterator adaptors in Rust are ``lazy''?
+Give an example of an adaptor and an example of a consumer.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{How does a closure in Rust differ from a regular \texttt{fn}
+function?}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the difference between
+\texttt{Option\textless{}T\textgreater{}} and
+\texttt{Result\textless{}T,\ E\textgreater{}}, and when would you reach
+for each?}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the role of the hash function when using a
+\texttt{HashMap\textless{}K,\ V\textgreater{}}, and why must keys
+implement \texttt{Eq} as well as \texttt{Hash}?}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{When would you choose
+\texttt{BTreeMap\textless{}K,\ V\textgreater{}} over
+\texttt{HashMap\textless{}K,\ V\textgreater{}}? Name one specific
+advantage.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Give one concrete use case where a
+\texttt{HashSet\textless{}T\textgreater{}} is a better choice than a
+\texttt{Vec\textless{}T\textgreater{}}, and briefly explain why.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is \texttt{BinaryHeap\textless{}T\textgreater{}} useful
+for? Describe one typical use case and the order in which \texttt{pop()}
+returns elements.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Explain the difference between a stack and a queue. Which Rust
+standard-library type is a good fit for each?}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Describe the difference between O(1), O(n), and O(log n) time
+complexity in plain language. Give one Rust collection operation for
+each.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What problem does the \texttt{Entry} API on \texttt{HashMap} /
+\texttt{BTreeMap} solve, compared with using \texttt{contains\_key}
+followed by \texttt{insert}?}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Name three commonly derived traits in Rust and briefly describe
+what \texttt{\#{[}derive(...){]}} gives you for each.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Give one reason why \texttt{Vec\textless{}T\textgreater{}} is
+usually preferred over \texttt{LinkedList\textless{}T\textgreater{}} in
+Rust, even when you need to frequently grow a collection.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Predict the Output
+(predict\_output)}\label{predict-the-output-predict_output}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let}\NormalTok{ x }\OperatorTok{=} \DecValTok{5}\OperatorTok{;}
+    \KeywordTok{let}\NormalTok{ y }\OperatorTok{=}\NormalTok{ x}\OperatorTok{;}
+    \KeywordTok{let}\NormalTok{ x }\OperatorTok{=}\NormalTok{ x }\OperatorTok{+} \DecValTok{1}\OperatorTok{;}
+    \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\} \{\}"}\OperatorTok{,}\NormalTok{ x}\OperatorTok{,}\NormalTok{ y)}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{fn}\NormalTok{ double}\OperatorTok{\textless{}}\NormalTok{T}\OperatorTok{:} \PreprocessorTok{std::ops::}\BuiltInTok{Add}\OperatorTok{\textless{}}\NormalTok{Output }\OperatorTok{=}\NormalTok{ T}\OperatorTok{\textgreater{}} \OperatorTok{+} \BuiltInTok{Copy}\OperatorTok{\textgreater{}}\NormalTok{(x}\OperatorTok{:}\NormalTok{ T) }\OperatorTok{{-}\textgreater{}}\NormalTok{ T }\OperatorTok{\{}
+\NormalTok{    x }\OperatorTok{+}\NormalTok{ x}
+\OperatorTok{\}}
+
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\} \{\}"}\OperatorTok{,}\NormalTok{ double(}\DecValTok{3}\NormalTok{)}\OperatorTok{,}\NormalTok{ double(}\DecValTok{2.5}\NormalTok{))}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let}\NormalTok{ a}\OperatorTok{:} \DataTypeTok{Option}\OperatorTok{\textless{}}\DataTypeTok{i32}\OperatorTok{\textgreater{}} \OperatorTok{=} \ConstantTok{Some}\NormalTok{(}\DecValTok{7}\NormalTok{)}\OperatorTok{;}
+    \KeywordTok{let}\NormalTok{ b}\OperatorTok{:} \DataTypeTok{Option}\OperatorTok{\textless{}}\DataTypeTok{i32}\OperatorTok{\textgreater{}} \OperatorTok{=} \ConstantTok{None}\OperatorTok{;}
+    \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\} \{\}"}\OperatorTok{,}\NormalTok{ a}\OperatorTok{.}\NormalTok{unwrap\_or(}\DecValTok{0}\NormalTok{)}\OperatorTok{,}\NormalTok{ b}\OperatorTok{.}\NormalTok{unwrap\_or(}\DecValTok{0}\NormalTok{))}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let}\NormalTok{ total}\OperatorTok{:} \DataTypeTok{i32} \OperatorTok{=}\NormalTok{ (}\DecValTok{1}\OperatorTok{..=}\DecValTok{5}\NormalTok{)}
+        \OperatorTok{.}\NormalTok{filter(}\OperatorTok{|}\NormalTok{x}\OperatorTok{|}\NormalTok{ x }\OperatorTok{\%} \DecValTok{2} \OperatorTok{==} \DecValTok{1}\NormalTok{)}
+        \OperatorTok{.}\NormalTok{map(}\OperatorTok{|}\NormalTok{x}\OperatorTok{|}\NormalTok{ x }\OperatorTok{*}\NormalTok{ x)}
+        \OperatorTok{.}\NormalTok{sum()}\OperatorTok{;}
+    \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\}"}\OperatorTok{,}\NormalTok{ total)}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let}\NormalTok{ names }\OperatorTok{=} \PreprocessorTok{vec!}\NormalTok{[}\StringTok{"Alice"}\OperatorTok{,} \StringTok{"Bob"}\OperatorTok{,} \StringTok{"Carol"}\NormalTok{]}\OperatorTok{;}
+    \KeywordTok{let}\NormalTok{ scores }\OperatorTok{=} \PreprocessorTok{vec!}\NormalTok{[}\DecValTok{90}\OperatorTok{,} \DecValTok{85}\OperatorTok{,} \DecValTok{95}\NormalTok{]}\OperatorTok{;}
+    \ControlFlowTok{for}\NormalTok{ (i}\OperatorTok{,}\NormalTok{ (n}\OperatorTok{,}\NormalTok{ s)) }\KeywordTok{in}\NormalTok{ names}\OperatorTok{.}\NormalTok{iter()}\OperatorTok{.}\NormalTok{zip(scores}\OperatorTok{.}\NormalTok{iter())}\OperatorTok{.}\NormalTok{enumerate() }\OperatorTok{\{}
+        \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\}: \{\} = \{\}"}\OperatorTok{,}\NormalTok{ i}\OperatorTok{,}\NormalTok{ n}\OperatorTok{,}\NormalTok{ s)}\OperatorTok{;}
+    \OperatorTok{\}}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let}\NormalTok{ greeting }\OperatorTok{=} \DataTypeTok{String}\PreprocessorTok{::}\NormalTok{from(}\StringTok{"Hello"}\NormalTok{)}\OperatorTok{;}
+    \KeywordTok{let}\NormalTok{ say }\OperatorTok{=} \KeywordTok{move} \OperatorTok{||} \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\}, world!"}\OperatorTok{,}\NormalTok{ greeting)}\OperatorTok{;}
+\NormalTok{    say()}\OperatorTok{;}
+\NormalTok{    say()}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AttributeTok{\#[}\NormalTok{derive}\AttributeTok{(}\BuiltInTok{Debug}\AttributeTok{)]}
+\KeywordTok{struct}\NormalTok{ Point }\OperatorTok{\{}
+\NormalTok{    x}\OperatorTok{:} \DataTypeTok{i32}\OperatorTok{,}
+\NormalTok{    y}\OperatorTok{:} \DataTypeTok{i32}\OperatorTok{,}
+\OperatorTok{\}}
+
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let}\NormalTok{ p }\OperatorTok{=}\NormalTok{ Point }\OperatorTok{\{}\NormalTok{ x}\OperatorTok{:} \DecValTok{1}\OperatorTok{,}\NormalTok{ y}\OperatorTok{:} \DecValTok{2} \OperatorTok{\};}
+    \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{:?\}"}\OperatorTok{,}\NormalTok{ p)}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{use} \PreprocessorTok{std::collections::}\NormalTok{HashMap}\OperatorTok{;}
+
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let} \KeywordTok{mut}\NormalTok{ map}\OperatorTok{:}\NormalTok{ HashMap}\OperatorTok{\textless{}\&}\DataTypeTok{str}\OperatorTok{,} \DataTypeTok{i32}\OperatorTok{\textgreater{}} \OperatorTok{=} \PreprocessorTok{HashMap::}\NormalTok{new()}\OperatorTok{;}
+\NormalTok{    map}\OperatorTok{.}\NormalTok{insert(}\StringTok{"a"}\OperatorTok{,} \DecValTok{1}\NormalTok{)}\OperatorTok{;}
+    \KeywordTok{let}\NormalTok{ prev }\OperatorTok{=}\NormalTok{ map}\OperatorTok{.}\NormalTok{insert(}\StringTok{"a"}\OperatorTok{,} \DecValTok{2}\NormalTok{)}\OperatorTok{;}
+    \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{:?\} \{:?\}"}\OperatorTok{,}\NormalTok{ prev}\OperatorTok{,}\NormalTok{ map}\OperatorTok{.}\NormalTok{get(}\StringTok{"a"}\NormalTok{))}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{use} \PreprocessorTok{std::collections::}\NormalTok{HashMap}\OperatorTok{;}
+
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let} \KeywordTok{mut}\NormalTok{ counts}\OperatorTok{:}\NormalTok{ HashMap}\OperatorTok{\textless{}}\DataTypeTok{char}\OperatorTok{,} \DataTypeTok{i32}\OperatorTok{\textgreater{}} \OperatorTok{=} \PreprocessorTok{HashMap::}\NormalTok{new()}\OperatorTok{;}
+    \ControlFlowTok{for}\NormalTok{ c }\KeywordTok{in} \StringTok{"banana"}\OperatorTok{.}\NormalTok{chars() }\OperatorTok{\{}
+        \OperatorTok{*}\NormalTok{counts}\OperatorTok{.}\NormalTok{entry(c)}\OperatorTok{.}\NormalTok{or\_insert(}\DecValTok{0}\NormalTok{) }\OperatorTok{+=} \DecValTok{1}\OperatorTok{;}
+    \OperatorTok{\}}
+    \KeywordTok{let} \KeywordTok{mut}\NormalTok{ items}\OperatorTok{:} \DataTypeTok{Vec}\OperatorTok{\textless{}}\NormalTok{(}\DataTypeTok{char}\OperatorTok{,} \DataTypeTok{i32}\NormalTok{)}\OperatorTok{\textgreater{}} \OperatorTok{=}\NormalTok{ counts}\OperatorTok{.}\NormalTok{into\_iter()}\OperatorTok{.}\NormalTok{collect()}\OperatorTok{;}
+\NormalTok{    items}\OperatorTok{.}\NormalTok{sort()}\OperatorTok{;}
+    \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{:?\}"}\OperatorTok{,}\NormalTok{ items)}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{use} \PreprocessorTok{std::collections::}\NormalTok{HashSet}\OperatorTok{;}
+
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let} \KeywordTok{mut}\NormalTok{ seen}\OperatorTok{:}\NormalTok{ HashSet}\OperatorTok{\textless{}}\DataTypeTok{i32}\OperatorTok{\textgreater{}} \OperatorTok{=} \PreprocessorTok{HashSet::}\NormalTok{new()}\OperatorTok{;}
+    \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\}"}\OperatorTok{,}\NormalTok{ seen}\OperatorTok{.}\NormalTok{insert(}\DecValTok{1}\NormalTok{))}\OperatorTok{;}
+    \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\}"}\OperatorTok{,}\NormalTok{ seen}\OperatorTok{.}\NormalTok{insert(}\DecValTok{2}\NormalTok{))}\OperatorTok{;}
+    \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\}"}\OperatorTok{,}\NormalTok{ seen}\OperatorTok{.}\NormalTok{insert(}\DecValTok{1}\NormalTok{))}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{use} \PreprocessorTok{std::collections::}\NormalTok{BTreeMap}\OperatorTok{;}
+
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let} \KeywordTok{mut}\NormalTok{ scores}\OperatorTok{:}\NormalTok{ BTreeMap}\OperatorTok{\textless{}\&}\DataTypeTok{str}\OperatorTok{,} \DataTypeTok{i32}\OperatorTok{\textgreater{}} \OperatorTok{=} \PreprocessorTok{BTreeMap::}\NormalTok{new()}\OperatorTok{;}
+\NormalTok{    scores}\OperatorTok{.}\NormalTok{insert(}\StringTok{"carol"}\OperatorTok{,} \DecValTok{95}\NormalTok{)}\OperatorTok{;}
+\NormalTok{    scores}\OperatorTok{.}\NormalTok{insert(}\StringTok{"alice"}\OperatorTok{,} \DecValTok{90}\NormalTok{)}\OperatorTok{;}
+\NormalTok{    scores}\OperatorTok{.}\NormalTok{insert(}\StringTok{"bob"}\OperatorTok{,} \DecValTok{85}\NormalTok{)}\OperatorTok{;}
+    \ControlFlowTok{for}\NormalTok{ (name}\OperatorTok{,}\NormalTok{ score) }\KeywordTok{in} \OperatorTok{\&}\NormalTok{scores }\OperatorTok{\{}
+        \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\} \{\}"}\OperatorTok{,}\NormalTok{ name}\OperatorTok{,}\NormalTok{ score)}\OperatorTok{;}
+    \OperatorTok{\}}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{use} \PreprocessorTok{std::collections::}\NormalTok{BinaryHeap}\OperatorTok{;}
+
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let} \KeywordTok{mut}\NormalTok{ heap}\OperatorTok{:}\NormalTok{ BinaryHeap}\OperatorTok{\textless{}}\DataTypeTok{i32}\OperatorTok{\textgreater{}} \OperatorTok{=} \PreprocessorTok{BinaryHeap::}\NormalTok{new()}\OperatorTok{;}
+    \ControlFlowTok{for}\NormalTok{ x }\KeywordTok{in}\NormalTok{ [}\DecValTok{3}\OperatorTok{,} \DecValTok{1}\OperatorTok{,} \DecValTok{4}\OperatorTok{,} \DecValTok{1}\OperatorTok{,} \DecValTok{5}\OperatorTok{,} \DecValTok{9}\OperatorTok{,} \DecValTok{2}\NormalTok{] }\OperatorTok{\{}
+\NormalTok{        heap}\OperatorTok{.}\NormalTok{push(x)}\OperatorTok{;}
+    \OperatorTok{\}}
+    \ControlFlowTok{while} \KeywordTok{let} \ConstantTok{Some}\NormalTok{(top) }\OperatorTok{=}\NormalTok{ heap}\OperatorTok{.}\NormalTok{pop() }\OperatorTok{\{}
+        \PreprocessorTok{print!}\NormalTok{(}\StringTok{"\{\} "}\OperatorTok{,}\NormalTok{ top)}\OperatorTok{;}
+    \OperatorTok{\}}
+    \PreprocessorTok{println!}\NormalTok{()}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{use} \PreprocessorTok{std::collections::}\NormalTok{VecDeque}\OperatorTok{;}
+
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let} \KeywordTok{mut}\NormalTok{ q}\OperatorTok{:}\NormalTok{ VecDeque}\OperatorTok{\textless{}}\DataTypeTok{i32}\OperatorTok{\textgreater{}} \OperatorTok{=} \PreprocessorTok{VecDeque::}\NormalTok{new()}\OperatorTok{;}
+\NormalTok{    q}\OperatorTok{.}\NormalTok{push\_back(}\DecValTok{1}\NormalTok{)}\OperatorTok{;}
+\NormalTok{    q}\OperatorTok{.}\NormalTok{push\_back(}\DecValTok{2}\NormalTok{)}\OperatorTok{;}
+\NormalTok{    q}\OperatorTok{.}\NormalTok{push\_front(}\DecValTok{0}\NormalTok{)}\OperatorTok{;}
+\NormalTok{    q}\OperatorTok{.}\NormalTok{push\_back(}\DecValTok{3}\NormalTok{)}\OperatorTok{;}
+    \ControlFlowTok{while} \KeywordTok{let} \ConstantTok{Some}\NormalTok{(x) }\OperatorTok{=}\NormalTok{ q}\OperatorTok{.}\NormalTok{pop\_front() }\OperatorTok{\{}
+        \PreprocessorTok{print!}\NormalTok{(}\StringTok{"\{\} "}\OperatorTok{,}\NormalTok{ x)}\OperatorTok{;}
+    \OperatorTok{\}}
+    \PreprocessorTok{println!}\NormalTok{()}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{fn}\NormalTok{ classify(x}\OperatorTok{:} \DataTypeTok{i32}\NormalTok{) }\OperatorTok{{-}\textgreater{}} \OperatorTok{\&}\OtherTok{\textquotesingle{}static} \DataTypeTok{str} \OperatorTok{\{}
+    \ControlFlowTok{match}\NormalTok{ x }\OperatorTok{\{}
+\NormalTok{        n }\ControlFlowTok{if}\NormalTok{ n }\OperatorTok{\textless{}} \DecValTok{0} \OperatorTok{=\textgreater{}} \StringTok{"negative"}\OperatorTok{,}
+        \DecValTok{0} \OperatorTok{=\textgreater{}} \StringTok{"zero"}\OperatorTok{,}
+        \DecValTok{1}\OperatorTok{..=}\DecValTok{9} \OperatorTok{=\textgreater{}} \StringTok{"single digit"}\OperatorTok{,}
+\NormalTok{        \_ }\OperatorTok{=\textgreater{}} \StringTok{"big"}\OperatorTok{,}
+    \OperatorTok{\}}
+\OperatorTok{\}}
+
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \ControlFlowTok{for}\NormalTok{ x }\KeywordTok{in}\NormalTok{ [}\OperatorTok{{-}}\DecValTok{1}\OperatorTok{,} \DecValTok{0}\OperatorTok{,} \DecValTok{7}\OperatorTok{,} \DecValTok{42}\NormalTok{] }\OperatorTok{\{}
+        \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\}: \{\}"}\OperatorTok{,}\NormalTok{ x}\OperatorTok{,}\NormalTok{ classify(x))}\OperatorTok{;}
+    \OperatorTok{\}}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{fn}\NormalTok{ longest}\OperatorTok{\textless{}}\OtherTok{\textquotesingle{}a}\OperatorTok{\textgreater{}}\NormalTok{(x}\OperatorTok{:} \OperatorTok{\&}\OtherTok{\textquotesingle{}a} \DataTypeTok{str}\OperatorTok{,}\NormalTok{ y}\OperatorTok{:} \OperatorTok{\&}\OtherTok{\textquotesingle{}a} \DataTypeTok{str}\NormalTok{) }\OperatorTok{{-}\textgreater{}} \OperatorTok{\&}\OtherTok{\textquotesingle{}a} \DataTypeTok{str} \OperatorTok{\{}
+    \ControlFlowTok{if}\NormalTok{ x}\OperatorTok{.}\NormalTok{len() }\OperatorTok{\textgreater{}=}\NormalTok{ y}\OperatorTok{.}\NormalTok{len() }\OperatorTok{\{}\NormalTok{ x }\OperatorTok{\}} \ControlFlowTok{else} \OperatorTok{\{}\NormalTok{ y }\OperatorTok{\}}
+\OperatorTok{\}}
+
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let}\NormalTok{ s1 }\OperatorTok{=} \DataTypeTok{String}\PreprocessorTok{::}\NormalTok{from(}\StringTok{"hello"}\NormalTok{)}\OperatorTok{;}
+    \KeywordTok{let}\NormalTok{ s2 }\OperatorTok{=} \DataTypeTok{String}\PreprocessorTok{::}\NormalTok{from(}\StringTok{"ds210"}\NormalTok{)}\OperatorTok{;}
+    \KeywordTok{let}\NormalTok{ result }\OperatorTok{=}\NormalTok{ longest(}\OperatorTok{\&}\NormalTok{s1}\OperatorTok{,} \OperatorTok{\&}\NormalTok{s2)}\OperatorTok{;}
+    \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\}"}\OperatorTok{,}\NormalTok{ result)}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is the output of this program?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{struct}\NormalTok{ Rectangle }\OperatorTok{\{}
+\NormalTok{    width}\OperatorTok{:} \DataTypeTok{u32}\OperatorTok{,}
+\NormalTok{    height}\OperatorTok{:} \DataTypeTok{u32}\OperatorTok{,}
+\OperatorTok{\}}
+
+\KeywordTok{impl}\NormalTok{ Rectangle }\OperatorTok{\{}
+    \KeywordTok{fn}\NormalTok{ area(}\OperatorTok{\&}\KeywordTok{self}\NormalTok{) }\OperatorTok{{-}\textgreater{}} \DataTypeTok{u32} \OperatorTok{\{}
+        \KeywordTok{self}\OperatorTok{.}\NormalTok{width }\OperatorTok{*} \KeywordTok{self}\OperatorTok{.}\NormalTok{height}
+    \OperatorTok{\}}
+\OperatorTok{\}}
+
+\KeywordTok{fn}\NormalTok{ main() }\OperatorTok{\{}
+    \KeywordTok{let}\NormalTok{ r }\OperatorTok{=}\NormalTok{ Rectangle }\OperatorTok{\{}\NormalTok{ width}\OperatorTok{:} \DecValTok{3}\OperatorTok{,}\NormalTok{ height}\OperatorTok{:} \DecValTok{4} \OperatorTok{\};}
+    \PreprocessorTok{println!}\NormalTok{(}\StringTok{"\{\}"}\OperatorTok{,}\NormalTok{ r}\OperatorTok{.}\NormalTok{area())}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Short Coding Challenges (coding + short
+tag)}\label{short-coding-challenges-coding-short-tag}
+
+\textbf{Write a function
+\texttt{char\_count(s:\ \&str)\ -\textgreater{}\ HashMap\textless{}char,\ usize\textgreater{}}
+that returns a map from each character in \texttt{s} to the number of
+times it appears.}
+
+Call it in \texttt{main} with \texttt{"rust"} and print the resulting
+map with \texttt{\{:?\}}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{In \texttt{main}, start with
+\texttt{let\ nums\ =\ vec!{[}1,\ 2,\ 2,\ 3,\ 1,\ 4,\ 3,\ 5{]};} and use
+a \texttt{HashSet\textless{}i32\textgreater{}} to count how many
+distinct values appear. Print the count.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{In \texttt{main}, build a
+\texttt{BTreeMap\textless{}\&str,\ i32\textgreater{}} from the pairs
+\texttt{("banana",\ 3)}, \texttt{("apple",\ 5)},
+\texttt{("cherry",\ 2)}, and then iterate and print each
+\texttt{name\ score} pair on its own line.}
+
+The output should be in alphabetical order by name because of the map
+type.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{In \texttt{main}, use a
+\texttt{BinaryHeap\textless{}i32\textgreater{}} to find and print the
+three largest values in \texttt{vec!{[}4,\ 10,\ 2,\ 8,\ 15,\ 7,\ 1{]}},
+in descending order, separated by spaces.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{In \texttt{main}, use
+\texttt{VecDeque\textless{}i32\textgreater{}} as a FIFO queue. Enqueue
+the numbers 1 through 5 (in order), then dequeue them all and print each
+dequeued value on its own line.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{In \texttt{main}, use iterator methods to compute and print the
+sum of squares of the even numbers in \texttt{1..=10}.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{In \texttt{main}, given
+\texttt{vec!{[}3,\ 1,\ 4,\ 1,\ 5,\ 9,\ 2,\ 6,\ 5{]}}, use
+\texttt{.partition(...)} to split the values into two
+\texttt{Vec\textless{}i32\textgreater{}}s: those less than 5 and those
+greater than or equal to 5. Then print the lengths of the two resulting
+vectors.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Given
+\texttt{let\ fruits\ =\ vec!{[}"apple",\ "banana",\ "apple",\ "cherry",\ "banana",\ "apple"{]};},
+in \texttt{main} build a
+\texttt{HashMap\textless{}\&str,\ i32\textgreater{}} using the
+\texttt{entry} API that inserts each key and increments the count for
+each key and print how many times \texttt{"apple"} appears.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Write a function
+\texttt{first\_long\textless{}\textquotesingle{}a\textgreater{}(words:\ \&\textquotesingle{}a\ {[}\&\textquotesingle{}a\ str{]},\ min\_len:\ usize)\ -\textgreater{}\ Option\textless{}\&\textquotesingle{}a\ str\textgreater{}}
+that returns the first word in \texttt{words} whose length is at least
+\texttt{min\_len}, or \texttt{None} if there isn't one.}
+
+Call it from \texttt{main} with
+\texttt{\&{[}"hi",\ "ok",\ "rust",\ "hello"{]}} and
+\texttt{min\_len\ =\ 4}, and print the result using \texttt{\{:?\}}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Write a generic function
+\texttt{largest\textless{}T:\ PartialOrd\ +\ Copy\textgreater{}(list:\ \&{[}T{]})\ -\textgreater{}\ T}
+that returns the largest element of the slice. Assume the slice is
+non-empty.}
+
+Call it from \texttt{main} once with
+\texttt{\&{[}10,\ 3,\ 7,\ 25,\ 4{]}} and once with
+\texttt{\&{[}1.5\_f64,\ 2.5,\ 0.5{]}} and print both results.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{In \texttt{main}, start with
+\texttt{let\ mut\ scores\ =\ vec!{[}("alice",\ 85),\ ("bob",\ 92),\ ("carol",\ 78){]};}
+and use \texttt{sort\_by} with a closure to sort the vector by score in
+descending order. Print the resulting vector with \texttt{\{:?\}}.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Long Coding Challenges (coding + long
+tag)}\label{long-coding-challenges-coding-long-tag}
+
+\textbf{Write a program that counts word frequencies in a sentence and
+prints the three most frequent words, along with their counts, in
+descending order of frequency.}
+
+Use the sentence
+\texttt{"the\ quick\ brown\ fox\ jumps\ over\ the\ lazy\ dog\ the\ fox\ runs\ fast\ over\ the\ hill"}.
+Split on whitespace to get words (do not worry about punctuation or
+case). Break ties by alphabetical order of the word.
+
+Expected output:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{the 4}
+\NormalTok{fox 2}
+\NormalTok{over 2}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Write a program that prints, in sorted order, the values that
+appear in both input vectors:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{let}\NormalTok{ a }\OperatorTok{=} \PreprocessorTok{vec!}\NormalTok{[}\DecValTok{1}\OperatorTok{,} \DecValTok{2}\OperatorTok{,} \DecValTok{3}\OperatorTok{,} \DecValTok{4}\OperatorTok{,} \DecValTok{5}\OperatorTok{,} \DecValTok{6}\NormalTok{]}\OperatorTok{;}
+\KeywordTok{let}\NormalTok{ b }\OperatorTok{=} \PreprocessorTok{vec!}\NormalTok{[}\DecValTok{4}\OperatorTok{,} \DecValTok{5}\OperatorTok{,} \DecValTok{6}\OperatorTok{,} \DecValTok{7}\OperatorTok{,} \DecValTok{8}\OperatorTok{,} \DecValTok{9}\NormalTok{]}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Use \texttt{HashSet} for the membership checks, then sort the
+resulting common values before printing them (one per line).}
+
+Expected output:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{4}
+\NormalTok{5}
+\NormalTok{6}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Build a small ``grade book''. Given
+\texttt{let\ entries\ =\ vec!{[}("carol",\ 72),\ ("alice",\ 95),\ ("bob",\ 58),\ ("alice",\ 88),\ ("bob",\ 80){]};},
+insert each pair into a
+\texttt{BTreeMap\textless{}\&str,\ Vec\textless{}i32\textgreater{}\textgreater{}}
+keyed by name, with the list of that student's scores as the value. Then
+iterate the map (which will give names in alphabetical order) and print
+each student's name followed by their average score, formatted to one
+decimal place.}
+
+Expected output:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{alice 91.5}
+\NormalTok{bob 69.0}
+\NormalTok{carol 72.0}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Write a function
+\texttt{kth\_largest(nums:\ \&{[}i32{]},\ k:\ usize)\ -\textgreater{}\ Option\textless{}i32\textgreater{}}
+that returns the \texttt{k}-th largest value in the slice (1-indexed).
+If \texttt{k} is zero or larger than the slice length, return
+\texttt{None}. Use a \texttt{BinaryHeap} to find the answer.}
+
+Call the function from \texttt{main} with
+\texttt{\&{[}7,\ 2,\ 9,\ 4,\ 11,\ 3{]}} and \texttt{k\ =\ 3}, and print
+the result with \texttt{\{:?\}}.
+
+Expected output:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Some(7)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Write a function
+\texttt{is\_balanced(s:\ \&str)\ -\textgreater{}\ bool} that returns
+\texttt{true} if every opening bracket in \texttt{s} is matched by a
+closing bracket of the same type in the correct order. Support
+\texttt{()}, \texttt{{[}{]}}, and \texttt{\{\}}. Ignore any other
+characters.}
+
+Use a \texttt{Vec\textless{}char\textgreater{}} as a stack. Call the
+function from \texttt{main} on each of these inputs and print the result
+on its own line:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{let}\NormalTok{ cases }\OperatorTok{=}\NormalTok{ [}\StringTok{"()[]\{\}"}\OperatorTok{,} \StringTok{"([\{\}])"}\OperatorTok{,} \StringTok{"(]"}\OperatorTok{,} \StringTok{"((()"}\NormalTok{]}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+Expected output:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{true}
+\NormalTok{true}
+\NormalTok{false}
+\NormalTok{false}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Write a function
+\texttt{moving\_avg(values:\ \&{[}f64{]},\ window:\ usize)\ -\textgreater{}\ Vec\textless{}f64\textgreater{}}
+that computes the rolling average over a sliding window of size
+\texttt{window}. Use a \texttt{VecDeque\textless{}f64\textgreater{}} to
+track the window. Only emit an average once the window is fully
+populated, so the output length is
+\texttt{values.len()\ -\ window\ +\ 1} (or empty if
+\texttt{values.len()\ \textless{}\ window}).}
+
+Call the function from \texttt{main} with
+\texttt{values\ =\ \&{[}1.0,\ 2.0,\ 3.0,\ 4.0,\ 5.0{]}} and
+\texttt{window\ =\ 3}, and print each result on its own line, formatted
+to one decimal place.
+
+Expected output:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{2.0}
+\NormalTok{3.0}
+\NormalTok{4.0}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Define a trait \texttt{Summary} with a single method
+\texttt{summary(\&self)\ -\textgreater{}\ String}. Implement
+\texttt{Summary} for two structs:
+\texttt{Tweet\ \{\ user:\ String,\ text:\ String\ \}} and
+\texttt{Article\ \{\ title:\ String,\ body:\ String\ \}}. The tweet
+summary should be \texttt{"@user:\ text"}, and the article summary
+should be \texttt{"title\ —\ first\ 20\ chars\ of\ body"} (use
+\texttt{.chars().take(20).collect::\textless{}String\textgreater{}()} to
+get the first 20 characters).}
+
+In \texttt{main}, create one of each, put both into a
+\texttt{Vec\textless{}Box\textless{}dyn\ Summary\textgreater{}\textgreater{}},
+iterate over the vector, and print each summary.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Given the slice of \texttt{(city,\ temp\_f)} pairs:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{let}\NormalTok{ readings }\OperatorTok{=} \PreprocessorTok{vec!}\NormalTok{[}
+\NormalTok{    (}\StringTok{"Boston"}\OperatorTok{,} \DecValTok{48.0\_f64}\NormalTok{)}\OperatorTok{,}\NormalTok{ (}\StringTok{"Phoenix"}\OperatorTok{,} \DecValTok{102.5}\NormalTok{)}\OperatorTok{,}
+\NormalTok{    (}\StringTok{"Denver"}\OperatorTok{,} \DecValTok{77.0}\NormalTok{)}\OperatorTok{,}\NormalTok{ (}\StringTok{"Miami"}\OperatorTok{,} \DecValTok{88.0}\NormalTok{)}\OperatorTok{,}\NormalTok{ (}\StringTok{"Anchorage"}\OperatorTok{,} \DecValTok{36.0}\NormalTok{)}\OperatorTok{,}
+\NormalTok{]}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Write a program that prints every city whose temperature is
+above 75°F, with its temperature converted to Celsius (formula:
+\texttt{(f\ -\ 32.0)\ *\ 5.0\ /\ 9.0}), one per line. Sort the output
+alphabetically by city. Use iterator methods (\texttt{filter},
+\texttt{map}, \texttt{collect}, \texttt{sort\_by\_key}, \ldots) rather
+than explicit loops.}
+
+Each printed line should look like \texttt{Phoenix\ 39.2} (temperature
+formatted to one decimal place).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Define a struct
+\texttt{Rectangle\ \{\ width:\ u32,\ height:\ u32\ \}} with three
+methods:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \texttt{area(\&self)\ -\textgreater{}\ u32}
+\item
+  \texttt{perimeter(\&self)\ -\textgreater{}\ u32}
+\item
+  \texttt{can\_hold(\&self,\ other:\ \&Rectangle)\ -\textgreater{}\ bool}
+  --- returns \texttt{true} if \texttt{self} is strictly larger than
+  \texttt{other} in both dimensions
+\end{enumerate}
+
+\textbf{In \texttt{main}, create
+\texttt{let\ a\ =\ Rectangle\ \{\ width:\ 10,\ height:\ 5\ \};} and
+\texttt{let\ b\ =\ Rectangle\ \{\ width:\ 4,\ height:\ 3\ \};}. Print
+\texttt{a.area()}, \texttt{a.perimeter()}, and \texttt{a.can\_hold(\&b)}
+each on their own line.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{You are given
+\texttt{let\ scores\ =\ vec!{[}("alice",\ 90),\ ("bob",\ 75),\ ("alice",\ 82),\ ("carol",\ 88),\ ("bob",\ 91),\ ("alice",\ 79){]};}.
+Using the \texttt{Entry} API on a
+\texttt{HashMap\textless{}\&str,\ (i32,\ i32)\textgreater{}} (where the
+value is \texttt{(total\_points,\ count)}), compute each student's
+average. Then print a line for each student in alphabetical order,
+formatted \texttt{name\ avg} with the average rounded to one decimal
+place.}
+
+Expected output:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{alice 83.7}
+\NormalTok{bob 83.0}
+\NormalTok{carol 88.0}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\end{document}
